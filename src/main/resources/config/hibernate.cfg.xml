@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration SYSTEM "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+
+        <property name="hibernate.dialect">
+            org.hibernate.dialect.MySQLDialect
+        </property>
+
+        <property name="hibernate.connection.driver_class">
+            com.mysql.cj.jdbc.Driver
+        </property>
+
+        <property name="hibernate.connection.url">
+            jdbc:mysql://localhost/inventory?useTimezone=true&amp;serverTimezone=UTC
+        </property>
+
+        <property name="hibernate.connection.username">
+            admin
+        </property>
+
+        <property name="hibernate.connection.password">
+            Meg~7+inO
+        </property>
+
+        <property name="hibernate.hbm2ddl.auto">validate</property>
+
+        <mapping class="by.htp.inventory.domain.Monitor"/>
+        <mapping class="by.htp.inventory.domain.Brand"/>
+        <mapping class="by.htp.inventory.domain.Diagonal"/>
+        <mapping class="by.htp.inventory.domain.Commutator"/>
+        <mapping class="by.htp.inventory.domain.Computer"/>
+        <mapping class="by.htp.inventory.domain.Cpu"/>
+        <mapping class="by.htp.inventory.domain.Gpu"/>
+        <mapping class="by.htp.inventory.domain.Matherboard"/>
+        <!-- <mapping resource="hbm/user.hbm.xml" />
+        <mapping resource="hbm/monitor.hbm.xml" />
+        <mapping resource="hbm/brand.hbm.xml"/>
+        <mapping resource="hbm/diagonal.hbm.xml"/> -->
+    </session-factory>
+</hibernate-configuration>

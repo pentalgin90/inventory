@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<import resource="/actionContext.xml"/>
+	<import resource="/userServiceContext.xml"/>
+	<import resource="/beans-context.xml" />
+	<import resource="/goToAddContext.xml" />
+	<import resource="/goToAddMonitor.xml" />
+	<import resource="/equipmentServiceContext.xml"/>
+	<import resource="/equipmentBeans-context.xml"/>
+	<import resource="/addMonitor.xml"/>
+	<import resource="/listMonitor.xml"/>
+	<import resource="/remoteMonitor.xml"/>
+	<import resource="/GoToUpdateMonitor.xml"/>
+	<import resource="/updateMonitor.xml"/>
+	<import resource="/goToList.xml"/>
+	<import resource="/listCommutator.xml"/>
+	<import resource="/remoteCommutator.xml"/>
+	<import resource="/goToAddCommutator.xml"/>
+	<import resource="/addCommutator.xml"/>
+	<import resource="/goToUpdateCommutator.xml"/>
+	<import resource="/listComputer.xml"/>
+</beans>
